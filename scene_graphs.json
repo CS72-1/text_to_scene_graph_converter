@@ -1,4 +1,44 @@
 [
+       [
+        {
+            "time": "T1",
+            "nodes": [
+                { "id": "bird",      "attributes": ["white",  "sitting"] },
+                { "id": "bird",      "attributes": ["black",  "sitting"] },
+                { "id": "branch",    "attributes": [                   ] },
+                { "id": "river",     "attributes": ["blue"             ] },
+                { "id": "sun",       "attributes": ["rising"           ] },
+                { "id": "mountains", "attributes": ["green"            ] },
+                { "id": "sky",       "attributes": [                   ] }
+            ],
+            "edges": [
+                ["bird",   "sits_on",      "branch"   ],
+                ["bird",   "sits_on",      "branch"   ],
+                ["branch", "near",         "river"    ],
+                ["sun",    "rises_behind", "mountains"]
+            ]
+        },
+        {
+            "time": "T2",
+            "nodes": [
+                { "id": "bird",      "attributes": ["white",  "flying", "wings_spread"] },
+                { "id": "bird",      "attributes": ["black",  "flying", "wings_spread"] },
+                { "id": "branch",    "attributes": [                                  ] },
+                { "id": "river",     "attributes": ["blue"                            ] },
+                { "id": "sun",       "attributes": ["rising"                          ] },
+                { "id": "mountains", "attributes": ["green"                           ] },
+                { "id": "sky",       "attributes": [                                  ] }
+            ],
+            "edges": [
+                ["bird",   "flies_across", "river"    ],
+                ["bird",   "flies_across", "river"    ],
+                ["bird",   "flies_toward", "sky"      ],
+                ["bird",   "flies_toward", "sky"      ],
+                ["branch", "near",         "river"    ],
+                ["sun",    "rises_behind", "mountains"]
+            ]
+        }
+    ],
     [
         {
             "time": "T1",
@@ -4934,45 +4974,6 @@
             ],
             "edges": [ ["water_wheel", "part_of", "mill"] ]
         }
-    ],
-    [
-        {
-            "time": "T1",
-            "nodes": [
-                { "id": "bird",      "attributes": ["white",  "sitting"] },
-                { "id": "bird",      "attributes": ["black",  "sitting"] },
-                { "id": "branch",    "attributes": [                   ] },
-                { "id": "river",     "attributes": ["blue"             ] },
-                { "id": "sun",       "attributes": ["rising"           ] },
-                { "id": "mountains", "attributes": ["green"            ] },
-                { "id": "sky",       "attributes": [                   ] }
-            ],
-            "edges": [
-                ["bird",   "sits_on",      "branch"   ],
-                ["bird",   "sits_on",      "branch"   ],
-                ["branch", "near",         "river"    ],
-                ["sun",    "rises_behind", "mountains"]
-            ]
-        },
-        {
-            "time": "T2",
-            "nodes": [
-                { "id": "bird",      "attributes": ["white",  "flying", "wings_spread"] },
-                { "id": "bird",      "attributes": ["black",  "flying", "wings_spread"] },
-                { "id": "branch",    "attributes": [                                  ] },
-                { "id": "river",     "attributes": ["blue"                            ] },
-                { "id": "sun",       "attributes": ["rising"                          ] },
-                { "id": "mountains", "attributes": ["green"                           ] },
-                { "id": "sky",       "attributes": [                                  ] }
-            ],
-            "edges": [
-                ["bird",   "flies_across", "river"    ],
-                ["bird",   "flies_across", "river"    ],
-                ["bird",   "flies_toward", "sky"      ],
-                ["bird",   "flies_toward", "sky"      ],
-                ["branch", "near",         "river"    ],
-                ["sun",    "rises_behind", "mountains"]
-            ]
-        }
     ]
 ]
+
