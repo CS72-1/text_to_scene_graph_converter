@@ -13,7 +13,7 @@ Text2SceneGraph Converter is a tool designed to automatically generate scene gra
 
 1. **Clone the repository**
 	```bash
-	git clone https://github.com/PeichenYao/text_to_scene_graph_converter.git
+	git clone https://github.com/CS72-1/text_to_scene_graph_converter
 	cd text_to_scene_graph_converter
 	```
 2. **Create and activate virtual environment**
