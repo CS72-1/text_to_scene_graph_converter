@@ -6,8 +6,8 @@ SCENE_GRAPHS_FILE = "scene_graphs.json"
 OUTPUT_PATH = "predicted_scene_graphs.json"
 EVALUATION_PATH = "spice_report.json"
 
-# --- API Configurations (Example) ---
-OPENAI_API_KEY = ""
+# --- API Configurations ---
+OPENAI_API_KEY = "" #Your own API_KEY
 MODEL_NAME = "gpt-5-mini"
 
 # --- Evaluation Settings ---
